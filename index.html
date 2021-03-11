@@ -36,9 +36,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
+        var allergy_count=0;
         var cold_count = 0;
-	var total = 0;
 	var alpe=0;
 	var colpe=0;
 
@@ -47,19 +46,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function allergyAdd(){
             allergy_count = allergy_count + 1;
 	alert(allergy_count);
-		total= total+1;
 
         }
 
         function coldAdd(){
             cold_count = cold_count + 1;
 	alert(cold_count);
-		total= total+1;
         }
 	function getResults (){
-	var resultText = document.getElementById("results");
-	alpe = allergy_count / total;
-	colpe = cold_count / total;	
+	var resultText = document.getElementById("results-section");
+	alpe = allergy_count / 4;
+	colpe = cold_count / 4;	
 	resultText.innerHTML = "Probability it is allergies =" + alpe + "<br> Probability it is a cold =" + colpe;
 	}
 	
@@ -167,8 +164,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	
 	<a href="#results" onclick="getResults();" class="w3-btn w3-grey w3-round"> Click Here to Find Out the Results </a>
-	<p id="results"></p>.
- 	
+	<p id="results-section"></p>.
+ 	<a href="#content" class="w3-btn w3-grey w3-round"> Home </a>
 
 
     	</div>
