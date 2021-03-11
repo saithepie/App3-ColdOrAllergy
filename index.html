@@ -62,6 +62,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	colpe = cold_count / total;	
 	resultText.innerHTML = "Probability it is allergies =" + alpe + "<br> Probability it is a cold =" + colpe;
 	}
+	function rewind (){
+	  allergy_count=0;
+         cold_count = 0;
+	 alpe=0;
+	 colpe=0;
+	 total =0;
+	}
 	
 
   </script>
@@ -96,11 +103,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </div>
 	
 <div id="content" class="w3-container">
-	 allergy_count=0;
-         cold_count = 0;
-	 alpe=0;
-	 colpe=0;
-	 total =0;
+	 
 	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
@@ -158,8 +161,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Are your symptoms seasonal or allergal?</p>  
-	<a href="#results"  onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
-	<a href="#results"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
+	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+
+    	</div>
+	<!--I changed the question content here to the first question, and added two buttons for -->
+</div>
+	
+<div class="page" id="five">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 5</h1>
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Have your symptoms lasted for more than 1 week?</p>  
+	<a href="#results"  onclick="coldAdd();" class="w3-btn w3-black">Yes</a>
+	<a href="#results"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
 
     	</div>
 	<!--I changed the question content here to the first question, and added two buttons for -->
@@ -173,7 +190,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<a href="#results" onclick="getResults();" class="w3-btn w3-grey w3-round"> Click Here to Find Out the Results </a>
 	<p id="results-section"></p>.
- 	<a href="#content" class="w3-btn w3-grey w3-round"> Home </a>
+ 	<a href="#content"   onclick="rewind();"class= "w3-btn w3-grey w3-round"> Home </a>
 
 
     	</div>
