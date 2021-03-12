@@ -62,7 +62,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	var resultText = document.getElementById("results-section"); //defining resultText variable
 	alpe = allergy_count / total * 100; //defining alpe and calculating the percent accordingly of allergy
 	colpe = cold_count / total * 100;   //defining colpe and calculating the percent accordingly of cold
-	resultText.innerHTML = "Probability it is allergies =" + alpe + &#37+ "<br> Probability it is a cold =" + colpe+&#37; //results are displayed in this format with percent of allergy and cold displayed in decimal form (ex 0.5 and 0.5 for 50% each), overall percent
+	resultText.innerHTML = "Probability it is allergies =" + alpe + "%"+ "<br> Probability it is a cold =" + colpe+"%"; //results are displayed in this format with percent of allergy and cold displayed in decimal form (ex 0.5 and 0.5 for 50% each), overall percent
 	}
 	function rewind (){ //function used in order to reset all the variables at the end of the program so it can be ran accurately again
 	  allergy_count=0;
