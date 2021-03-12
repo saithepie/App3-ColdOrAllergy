@@ -43,12 +43,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	//added variable colpe which was able to compute the percent of answers indicting cold
 	var total =0;
 	//added variable total to count the amount of total responses, used in percent calculations
-
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
-		//allergy count variable here is being added by one everytime allergyAdd is called
-	total++;
-		//everytime allergyAdd is used, total is added by 1
+	
 
         }
 
@@ -70,8 +65,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	 alpe=0;
 	 colpe=0;
 	 total =0;
-	var originalState = $("#results").clone();
-$("#results").replaceWith(originalState);
+	location.reload();
 
 
 	// every variable is set to 0 succesfully
