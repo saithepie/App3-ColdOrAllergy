@@ -50,7 +50,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		//allergy count variable here is being added by one everytime allergyAdd is called
 		total++;
 		//everytime coldAdd is used, total is added by 1
-		alert(allergy_count);
 	}
 
         function coldAdd(){
@@ -58,14 +57,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		//cold count variable here is being added by one everytime coldAdd is called
 		total++;
 		//everytime coldAdd is used, total is added by 1
-		alert(cold_count);
         }
 	function getResults (){ //using getResults function in order to get the results at the end
 	var resultText = document.getElementById("results-section"); //defining resultText variable
 	alpe = (allergy_count / total) * (100); //defining alpe and calculating the percent accordingly of allergy
-	alert(alpe);
 	colpe = (cold_count / total) * (100);//defining colpe and calculating the percent accordingly of cold
-	alert(colpe);
 	resultText.innerHTML = "Probability it is allergies =" + alpe + "%"+ "<br> Probability it is a cold =" + colpe+"%"; //results are displayed in this format with percent of allergy and cold displayed in decimal form (ex 0.5 and 0.5 for 50% each), overall percent
 	}
 	function rewind (){ //function used in order to reset all the variables at the end of the program so it can be ran accurately again
