@@ -49,6 +49,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 
+	var allergyPercent = 100 * allergy_count/6 ;
+	var coldPercent = 100 * cold_count/6;
 	var resultText = document.getElementById("results");
 	
   </script>
@@ -163,16 +165,24 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Did your symptoms appear suddenly?</p>
-		<a href="#six” onclick="coldAdd()” class="w3-btn w3-black">Yes</a>
-		<a href="#six" onclick="allergyAdd()" class="w3-btn w3-black">No</a>											
+		<a href="#seven” onclick="coldAdd()” class="w3-btn w3-black">Yes</a>
+		<a href="#seven" onclick="allergyAdd()" class="w3-btn w3-black">No</a>											
 	</div>
 </div>	
 <!--sixth question. Allergy Question-->	
 	
-<!--____________________________________adding results section under this for testing______________________________________________________________________________	
-
-<p resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent></p>	
-	-->
+<!--____________________________________adding results section under this for testing______________________________________________________________________________-->	
+<div class="page" id="seven">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Results</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent></p>											
+	</div>
+</div>	
+	
+	
 	
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
