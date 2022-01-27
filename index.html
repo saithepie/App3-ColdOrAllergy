@@ -100,13 +100,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	<div id="content" class="w3-container">
         <p>Are your eyes watery or itchy?</p>
 		<a href="#two”  onclick="allergyAdd();” class="w3-btn w3-black">Yes</a>
-		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
-		
-												*/first question, response will increment appropriate variable by 1*/	
+		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>											
     	</div>
-
 </div>
-
+<!--first question, response will increment appropriate variable by 1-->
+	
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
@@ -115,12 +113,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
 		<a href="#two”  onclick="coldAdd();” class="w3-btn w3-black">Yes</a>
-		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
-		
-											*/second question, response will increment variable by 1*/
+		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>									
 	</div>
 </div>	
-	
+<!--second question, response will increment variable by 1-->	
 
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
@@ -131,11 +127,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Do you have a sore throat?</p>
 		<a href="#two”  onclick="coldAdd();” class="w3-btn w3-black">Yes</a>
 		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
-		
-											*/Third question, response will increment variable by 1*/
 	</div>
 </div>	
-
+<!--Third question, response will increment variable by 1-->
 	
 <div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
@@ -145,12 +139,37 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>
 		<a href="#two”  onclick="allergyAdd();” class="w3-btn w3-black">Yes</a>
-		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
-		
-											*/fourth question. Changed the Yes/No variables to correct Xadd(). Response will increment variable by 1*/
+		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>											
 	</div>
 </div>	
+<!--fourth question. Changed the Yes/No variables to correct Xadd(). Response will increment variable by 1-->
 
+<div class="page" id="five">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 5</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Are you coughing frequently?</p>
+		<a href="#two”  onclick="coldAdd();” class="w3-btn w3-black">Yes</a>
+		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>											
+	</div>
+</div>	
+<!--fifth question. Cold Question-->
+	
+<div class="page" id="six">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 6</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Did your symptoms appear suddenly?</p>
+		<a href="#two”  onclick="coldAdd();” class="w3-btn w3-black">Yes</a>
+		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>											
+	</div>
+</div>	
+<!--sixth question. Allergy Question-->	
+	
 */____________________________________adding results section under this for testing______________________________________________________________________________*/	
 
 <p resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent></p>	
