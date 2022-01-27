@@ -96,8 +96,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Put Question 1 content here.</p>    
+        <p>Are your eyes watery or itchy?</p>
+		<a href="#two”  onclick="allergyAdd();” class="w3-btn w3-black"> Yes</a>
+		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+		
+//first question, response will increment appropriate variable by 1
+		
     	</div>
+
 </div>
 
 <div class="page" id="two">
@@ -106,7 +112,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Content of page 2 goes here.</p>
+		<p>Do you have a fever?</p>
+		<a href="#two”  onclick="coldAdd();” class="w3-btn w3-black"> Yes</a>
+		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+		
+//second question, response will increment variable by 1
 	</div>
 </div>	
 
