@@ -50,9 +50,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 	
 	function results(){
+		var newResults= document.getElementById("results-section")
 		var allergyPercent = 100 * ((allergy_count)/(allergy_count + cold_count));
 		var coldPercent = 100 * ((cold_count)/(allergy_count + cold_count));
-		document.getElementById("results-section").innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%";
+		newResults.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%";
 	}
 */removed var from 54. changed results function name */ 
   </script>
@@ -176,13 +177,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--____________________________________adding results section under this for testing______________________________________________________________________________-->	
 
 <div class="page" id="seven">
-	<div id= "header" class="w3-container w3-flat-carrot">
+	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
 	
-	<a href= "#seven" onclick="results();" class= "w3-btn w3-grey w3-round"> Tester 3</a>
+	<a href= "#seven" onclick="results();" class= "w3-btn w3-grey w3-round"> Tester 4</a>
 		
-		<p id= "results-section"> </p>.	
+		<p id= "results-section"> </p>	
 	
 	</div>
 	</div>
