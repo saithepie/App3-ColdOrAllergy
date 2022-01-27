@@ -48,10 +48,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
         }
+	
 	function getResults(){
-		var allergyPercent = 100 * (allergy_count/(allergy_count + cold_count));
-		var coldPercent = 100 * (cold_count/(allergy_count + cold_count));
-		document.getElementById("results").innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
+		var allergyPercent = 100 * ((allergy_count)/(allergy_count + cold_count));
+		var coldPercent = 100 * ((cold_count)/(allergy_count + cold_count));
+		document.getElementById("results").innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%";
 	}
 */removed var from 54. 
   </script>
@@ -166,11 +167,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Did your symptoms appear suddenly?</p>
-		<a href="#seven" onclick="coldAdd()" class="w3-btn w3-black">Yes</a>
-		<a href="#seven" onclick="allergyAdd()" class="w3-btn w3-black">No</a>											
+		<a href="#seven" onclick="coldAdd(); "class="w3-btn w3-black"> Yes </a>
+		<a href="#seven" onclick="allergyAdd(); "class="w3-btn w3-black"> No </a>											
 	</div>
 </div>	
-<!--sixth question. Allergy Question...changed quotation mark to stop error where yes goes back home-->	
+<!--sixth question. Allergy Question...changed quotation mark to stop error where yes goes back home. added semicolon after function-->	
 	
 <!--____________________________________adding results section under this for testing______________________________________________________________________________-->	
 <div class="page" id="seven">
